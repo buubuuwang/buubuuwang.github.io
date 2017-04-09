@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="youtubegallerywall.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="youtubegallerywall.js">
+    /***********************************************
+    * YouTube Gallery Wall - (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * Please keep this notice intact
+    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+    ***********************************************/
+    </script>
+    <script>
+        jQuery(function(){ 
+            // on DOM load
+            //syntax $(selector).youtubegallery()
+            $('#youtubelist').youtubegallery();
+        })
+    </script>
+</head>
+<style>
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    height: 100%;
+    max-height: 100%;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable" id="skippy">
+        <div class="container">
+            <span class="skiplink-text">Skip to main content</span>
+        </div>
+    </a>
+    <header class="bs-docs-nav navbar navbar-default navbar-static-top" id="top">
+        <div class="container"> 
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">SSU-PU WANG</a> 
+            </div>
+            <nav class="collapse navbar-collapse navbar-right"> 
+                <ul class="nav navbar-nav"> 
+                    <li> <a href="index.html">Home</a> </li> 
+                    <li> <a href="./cv/index.html">About Me</a> </li>
+                    <li> <a href="index.html">Taiwan</a> </li> 
+                    <li> <a href="index.html">Travel</a> </li> 
+                    <li> <a href="index.html">Files</a> </li> 
+                </ul> 
+            </nav>
+        </div> 
+    </header>
+    <main class="content" role="main" style="margin-top:-20px">
+        <div class="wrapper">
+            <ul id="youtubelist">
+                <li><a href="https://www.youtube.com/watch?v=2bwBuSmwsaY">Best of Trance 2012</a></li>
+            </ul>
+        </div>
+    </main>
+    </body>
+</html>
